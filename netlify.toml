@@ -2,6 +2,10 @@
 functions = "./functions"
 
 [[redirects]]
+from = "/api/*"
+to = "/.netlify/functions/myFunction"
+
+[[redirects]]
 from = "dummy/youtube/v3/*"
 to = "/.netlify/functions/dummy/:splat"
 status = 200
